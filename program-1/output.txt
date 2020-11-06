@@ -1,0 +1,16 @@
+	#	Time		Action	Message	Duration / Fetch
+
+1	1	14:10:41	Could not connect, server may not be running.	Unable to connect to localhost:3306	
+0	2	14:13:24	CREATE TABLE EMPLOYEE	Error Code: 1046. No database selectedSelect the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.	0.109 sec
+0	3	14:14:19	CREATE TABLE EMPLOYEE	Error Code: 1113. A table must have at least 1 column	0.000 sec
+3	4	14:18:10	CREATE TABLE STUDENT(sno INT, name varchar(25), dept varchar(25), mark varchar(25))	0 row(s) affected	1.141 sec
+0	5	14:19:02	CREATE TABLE STUDENT(sno INT, name varchar(25), dept varchar(25), mark varchar(25))	Error Code: 1050. Table 'student' already exists	0.079 sec
+3	6	14:19:14	alter table STUDENT ADD AGE INT	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.281 sec
+3	7	14:27:35	insert into student(sno, name, dept, mark, age) values (1, "Arjun"," cs",38,19)	1 row(s) affected	0.157 sec
+3	8	14:29:05	select * from student LIMIT 0, 1000	1 row(s) returned	0.047 sec / 0.000 sec
+3	9	14:30:34	ALTER TABLE student MODIFY COLUMN dept varchar(50)	0 row(s) affectedRecords: 0  Duplicates: 0  Warnings: 0	0.750 sec
+0	10	14:30:57	CREATE TABLE STUDENT(sno INT, name varchar(25), dept varchar(25), mark varchar(25))	Error Code: 1050. Table 'student' already exists	0.000 sec
+3	11	14:31:12	ALTER TABLE student DROP COLUMN mark	0 row(s) affectedRecords: 0  Duplicates: 0  Warnings: 0	1.297 sec
+3	12	14:31:36	select * from student LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	13	14:33:47	ALTER TABLE student RENAME TO students	0 row(s) affected	0.438 sec
+3	14	14:34:03	drop table students	0 row(s) affected	0.797 sec
