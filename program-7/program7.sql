@@ -14,4 +14,9 @@ VALUES
 ("smt865", "Galaxy tab s6", 10, 59900, 0, 59900);
 select * from store;
 
+SELECT MOD(price,9) FROM store;
+
 SELECT price,POWER(price,2) FROM store;
+
+SELECT ROUND(mrp DIV 7) FROM store;
+
